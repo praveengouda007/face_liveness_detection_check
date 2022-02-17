@@ -2,6 +2,7 @@
 detect_frontal_face = r'C:\Users\hi\Desktop\face_detection\face_liveness_detection\profile_detection\haarcascades\haarcascade_frontalface_alt.xml'
 detect_perfil_face = r'C:\Users\hi\Desktop\face_detection\face_liveness_detection\profile_detection\haarcascades\haarcascade_profileface.xml'
 
+selfie_path = r'C:\Users\hi\Desktop\face_detection\captured pics'
 
 # Emotion detection model
 path_model = r'C:\Users\hi\Desktop\face_detection\face_liveness_detection\emotion_detection\Modelos\model_dropout.hdf5'

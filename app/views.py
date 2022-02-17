@@ -2,7 +2,7 @@
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from .serializers import UploadSerializer
-from face_liveness_detection.face_anti_spoofing import Liveness_Api
+# from face_liveness_detection.face_anti_spoofing import Liveness_Api
 from face_liveness_detection import liveness_detection
 from django.core.files.storage import FileSystemStorage
 from django.core.files.base import ContentFile
@@ -26,5 +26,5 @@ class UploadView(APIView):
             "video.mp4", file_content
         )
         video = fs.path(file_name)
-        output = liveness_detection.VideoC(video)
+        output = liveness_detection.checking_liveness(video,selfie_name='')
         return Response(output)
